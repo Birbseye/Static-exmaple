@@ -14,10 +14,6 @@ A Bank osztályban létrehozunk két BankAccount objektumot,
 majd meghívjuk a getNumberOfAccounts() metódust az osztályon keresztül (nem az objektumon),
 hogy megkapjuk a létrehozott számlák számát. A konzolban kiírjuk ezt az értéket.
 
-DEMO:
-Az account1 és az account2 már példányosítára került, így ha lefuttatjuk ezt a main-t
-akkor a Számlák száma: 2 output-ot kapjuk.
-
 Hozz létre további számlákat és futtasd újra a main-t, a számlák számával lesz egyenlő
 a BankAccount.getNumberOfAccounts() visszatérési értéke.
 
@@ -41,6 +37,15 @@ hasznosak ebben az esetben azért, mert lehetővé
 teszik számunkra, hogy nyomon kövessük és lekérdezzük a
 létrehozott számlák számát.
 
+Tehát: Nem kell létrehoznom egy új objektumot, hogy nyilván tudjam tartani programomban
+a BankAccount-ok számát. Mert ha pl. csak azért létrehoznék egy BankAccount accoount-ot,
+hogy nyilván tartsam a számukat, már növelném is egyel feleslegesen. Így az osztály tudja magáról,
+hogy hányszor lett példányosítva.
+
+DEMO:
+Az account1 és az account2 már példányosítára került, így ha lefuttatjuk ezt a main-t
+akkor a Számlák száma: 2 output-ot kapjuk. Hozz létre további BankAccount példányokat,
+és futtasd le újra a main-t. A számlák száma növekedni fog.
 
  */
 

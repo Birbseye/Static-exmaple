@@ -27,7 +27,15 @@ public class BankAccount {
         return numberOfAccounts;
     }
 
+
+    /*
+     Ha a finalize() itt pirossal van aláhúzva, ne törődj vele, csak már elavultnak számít
+     de ebben a példában még elmegy a használata, de ez nem fontos része a példának
+     a static-ok használatát illetően, csak csökkenti a számot, ha törölsz egy
+     példányt a main-ben. Elvileg le fog futni így is.
+     */
     @Override
+    @SuppressWarnings("preview")
     protected void finalize() throws Throwable {
         super.finalize();
         numberOfAccounts--; // csökkentjük a számlák számát, mikor törlésre kerül egy példány.
