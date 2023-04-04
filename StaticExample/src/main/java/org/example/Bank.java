@@ -39,7 +39,7 @@ létrehozott számlák számát.
 
 Tehát: Nem kell létrehoznom egy új objektumot, hogy nyilván tudjam tartani programomban
 a BankAccount-ok számát. Mert ha pl. csak azért létrehoznék egy BankAccount accoount-ot,
-hogy nyilván tartsam a számukat, már növelném is egyel feleslegesen. Így az osztály tudja magáról,
+hogy megtudjam a számukat, már növelném is egyel feleslegesen. Így az osztály tudja magáról,
 hogy hányszor lett példányosítva.
 
 DEMO:
