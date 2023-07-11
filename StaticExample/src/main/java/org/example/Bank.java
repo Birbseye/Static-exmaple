@@ -15,5 +15,13 @@ public class Bank {
 
         // a getNumberOfAccounts() metódus meghívása az osztályon keresztül (nem példány!)
         System.out.println("Számlák száma: " + BankAccount.getNumberOfAccounts());
+
+        try {
+            account1.finalize();
+        } catch (Throwable e) {
+            throw new RuntimeException(e);
+        }
+
+        System.out.println("Számlák száma: " + BankAccount.getNumberOfAccounts());
     }
 }
